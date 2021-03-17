@@ -104,11 +104,11 @@ header{
 }
 
 #events-container .card{
-    flex: 1 1 0;
+    flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
-    margin: 5px;
+    margin: .5%;
 }
 
 #events-container img{
@@ -140,6 +140,11 @@ header{
     padding: 30px;
 }
 
+#event-create-container input[type = 'file']{
+    display: block;
+    border-radius: 0;
+} 
+
 #event-create-container label{
     font-weight: bold;
     font-size: 22px;
@@ -162,16 +167,14 @@ header{
 }
 
 /* AUMENTO DA FONT NO PLACEHOLDER */
-input:-ms-input-placeholder {font-size: 18px;}
-input::-webkit-input-placeholder {font-size: 18px;}
-input:-moz-placeholder {font-size: 18px;}
-input::-moz-placeholder {font-size: 18px;}/* firefox 19+ */
-
-/* AUMENTO DA FONT NO TEXTAREA */
-textarea:-ms-input-placeholder {font-size: 18px;}
-textarea::-webkit-input-placeholder {font-size: 18px;}
-textarea:-moz-placeholder {font-size: 18px;}
-textarea::-moz-placeholder {font-size: 18px;}/* firefox 19+ */
+input:-ms-input-placeholder {font-size: 16px;}
+input::-webkit-input-placeholder {font-size: 16px;}
+input:-moz-placeholder {font-size: 16px;}
+input::-moz-placeholder {font-size: 16px;}/* firefox 19+ */
+textarea:-ms-input-placeholder {font-size: 16px;}
+textarea::-webkit-input-placeholder {font-size: 16px;}
+textarea:-moz-placeholder {font-size: 16px;}
+textarea::-moz-placeholder {font-size: 16px;}/* firefox 19+ */
 
 
 #event-create-container input[type = 'submit']{
