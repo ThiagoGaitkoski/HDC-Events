@@ -181,6 +181,44 @@ textarea::-moz-placeholder {font-size: 16px;}/* firefox 19+ */
     margin-top: 20px;
 }
 
+/* EVENT PAGE */
+
+#image-container,
+#info-container{
+    margin-top: 30px;
+}
+
+#image-container img{
+    border-radius: 10px;
+}
+
+#info-container h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container h3,
+#description-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container p{
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+}
+
+#info-container ion-icon{
+   font-size: 20px;
+   color: #F2A340;
+   margin-right: 5px;
+}
+
+#info-container #event-submit{
+    margin: 20px 0;
+}
+
 /* FOOTER */
 
 footer{
