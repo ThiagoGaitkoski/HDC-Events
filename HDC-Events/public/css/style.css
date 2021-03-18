@@ -219,6 +219,15 @@ textarea::-moz-placeholder {font-size: 16px;}/* firefox 19+ */
     margin: 20px 0;
 }
 
+#items-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li{
+    display: flex;
+}
+
 /* FOOTER */
 
 footer{
