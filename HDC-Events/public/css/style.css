@@ -143,7 +143,7 @@ header{
 #event-create-container input[type = 'file']{
     display: block;
     border-radius: 0;
-} 
+}
 
 #event-create-container label{
     font-weight: bold;

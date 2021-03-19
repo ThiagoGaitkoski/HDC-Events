@@ -19,6 +19,11 @@
             </div><!--form-group-->
 
             <div class="form-group">
+                <label for="date">Data do Envento:</label>
+                <input type="date" id="date" name="date" class="form-control">
+            </div><!--form-group-->
+
+            <div class="form-group">
                 <label for="title">Cidade:</label>
                 <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento">
             </div><!--form-group-->
