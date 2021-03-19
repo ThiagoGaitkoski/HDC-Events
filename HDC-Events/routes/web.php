@@ -24,3 +24,6 @@ Route::post('/events', [EventController::class, 'store']);
 Route::get('/login/login',[EventController::class, 'login']);
 
 Route::get('/login/register',[EventController::class, 'register']);
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
