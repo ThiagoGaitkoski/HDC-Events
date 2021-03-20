@@ -18,10 +18,12 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/',[EventController::class, 'index']);
 
-Route::get('/events/create',[EventController::class, 'create'])->middleware('auth');
+Route::get('/events/create',[EventController::class, 'create'])->middleware('auth'); //Create
 Route::get('/events/{id}',[EventController::class, 'show']);
-Route::post('/events', [EventController::class, 'store']);
-Route::delete('/events/{id}', [EventController::class, 'destroy']);
+Route::post('/events', [EventController::class, 'store']); //Send Post
+Route::delete('/events/{id}', [EventController::class, 'destroy'])->middleware('auth'); //Delete
+Route::get('/events/edit/{id}', [EventController::class, 'edit'])->middleware('auth'); // Edit
+Route::put('/events/update/{id}', [EventController::class, 'update'])->middleware('auth'); //Update
 
 Route::get('/login/login',[EventController::class, 'login']);
 
