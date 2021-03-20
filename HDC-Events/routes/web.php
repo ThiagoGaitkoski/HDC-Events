@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\EventController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/',[EventController::class, 'index']);
 
@@ -23,7 +24,6 @@ Route::post('/events', [EventController::class, 'store']);
 
 Route::get('/login/login',[EventController::class, 'login']);
 
+Route::get('/dashboard',[EventController::class, 'dashboard'])->middleware('auth');
+
 Route::get('/login/register',[EventController::class, 'register']);
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
