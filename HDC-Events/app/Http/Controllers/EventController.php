@@ -89,11 +89,10 @@ class EventController extends Controller
         return view('events.dashboard', ['events' => $events]);
     }
 
-    public function login(){
-        return view('login.login');
-    }
+    public function destroy($id){
 
-    public function register(){
-        return view('login.register');
+        Event::findOrFail($id)->delete();
+
+        return redirect('/dashboard')->with('msg', 'Evento excluído com sucesso!');
     }
 }
