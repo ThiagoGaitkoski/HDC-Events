@@ -30,3 +30,5 @@ Route::get('/login/login',[EventController::class, 'login']);
 Route::get('/dashboard',[EventController::class, 'dashboard'])->middleware('auth');
 
 Route::get('/login/register',[EventController::class, 'register']);
+
+Route::post('/events/join/{id}', [EventController::class, 'joinEvent'])->middleware('auth'); //Join Event
